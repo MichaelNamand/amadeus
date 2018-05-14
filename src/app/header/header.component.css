@@ -1,0 +1,27 @@
+.modal-content{
+    border-radius: 0;
+}
+
+.nav-pills .nav-link{
+    border-radius: 0;
+    width: 50%;
+    text-align: center;
+}
+input {
+    border-radius: 0;
+}
+
+button {
+    border-radius: 0;
+    color: black;
+    border: 1px solid black;
+}
+button:hover {
+    background: #e2e0d3ff !important;
+    border: 1px solid black;
+}
+
+nav{
+    background: #fffbe6ff !important;
+    border-bottom: 1px black;
+}

@@ -1,0 +1,8 @@
+﻿Fichier bidon 1.0
+Je rajoute du texte parce que je suis un écrivain.
+
+T'es moche Tanguy
+
+Modificatoon 3 pour montrer un rebase.
+
+Je refais une modif parce que ces boulets ne m'écoutent pas.

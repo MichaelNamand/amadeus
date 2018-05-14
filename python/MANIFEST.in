@@ -1,0 +1,2 @@
+include flaskr/articles.sql
+global-exclude *.pyc

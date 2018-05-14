@@ -1,0 +1,79 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light" style="position: sticky; top: 0; z-index: 10">
+    <a class="navbar-brand" href="#" style="    font-weight: bold;">
+        <a id="sidebarCollapse">+</a>Nimbus 2000
+    </a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+            aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Shop<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Contact</a>
+            </li>
+        </ul>
+        <a class="nav-item nav-link" href="#" data-toggle="modal" data-target="#connexion-modal" style="color: black">
+            <img style="height: 34px;" src="/assets/icons/account_icon.svg"> Se connecter</a>
+        <form class="form-inline my-2 my-lg-0">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-primary my-2 my-sm-0" type="submit">Search</button>
+        </form>
+        <button class="btn btn-primary" (click)="login()">login</button>
+    </div>
+</nav>
+<div class="modal fade" id="connexion-modal" role="dialog">
+    <div class="modal-dialog" role="dialog">
+        <div class="modal-content">
+            <div class="modal-header" style="padding: 0">
+                <nav class="nav nav-pills" id="myTab" style="width: 100%">
+                    <a class="nav-item nav-link active"
+                       id="home-tab" data-toggle="tab"
+                       role="tab" aria-controls="login"
+                       href="#login"
+                    >LOGIN</a>
+                    <a class="nav-item nav-link"
+                       id="profile-tab" data-toggle="tab"
+                       role="tab" aria-controls="register"
+                       href="#register"
+                    >REGISTER</a>
+                </nav>
+            </div>
+            <div class="modal-body">
+                <div class="tab-content" id="myTabContent">
+                    <div class="tab-pane fade show active" id="login" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="form-group">
+                            <label for="login-input">Login</label>
+                            <input id="login-input" type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass">Password</label>
+                            <input id="pass" type="password" class="form-control">
+                        </div>
+                    </div>
+                    <div class="tab-pane fade" id="register" role="tabpanel" aria-labelledby="profile-tab">
+                        <div class="form-group">
+                            <label for="username-input">Login</label>
+                            <input id="username-input" type="email" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass-register">Password</label>
+                            <input id="pass-register" type="password" class="form-control">
+                        </div>
+                        <div class="form-group">
+                            <label for="pass-confirm">Confirm password</label>
+                            <input id="pass-confirm" type="password" class="form-control">
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary"><strong>Login</strong></button>
+            </div>
+        </div>
+    </div>
+</div>
