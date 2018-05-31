@@ -3,16 +3,16 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Mon panier</h5>
+                <h5 class="modal-title">MyBasket</h5>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
                 <table class="table" *ngIf="card.length > 0">
                     <thead>
                     <tr>
-                        <th scope="col">Qté</th>
+                        <th scope="col">Qty</th>
                         <th scope="col">Article</th>
-                        <th scope="col">Prix</th>
+                        <th scope="col">Price</th>
                         <th scope="col">Action</th>
                     </tr>
                     </thead>
@@ -29,16 +29,15 @@
                     </tr>
                     </tbody>
                 </table>
-                <p *ngIf="card.length === 0" class="error center">Votre panier est vide</p>
+                <p *ngIf="card.length === 0" class="error center">You basket is empty</p>
                 <p *ngIf="card.length > 0" class="error" style="text-align: right">Total : {{getPrice(getTotalCard())}}
                     €</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-primary" title="Le panier est vide" disabled
-                        *ngIf="card.length === 0">Passer la commande
+                        *ngIf="card.length === 0">Command
                 </button>
-                <button type="button" class="btn btn-primary" (click)="purchase()" *ngIf="card.length > 0">Passer la
-                    commande
+                <button type="button" class="btn btn-primary" (click)="purchase()" *ngIf="card.length > 0">Command
                 </button>
             </div>
         </div>
@@ -50,11 +49,11 @@
         <!-- Modal content-->
         <div class="modal-content">
             <div class="modal-header">
-                <h5 class="modal-title">Commande terminée</h5>
+                <h5 class="modal-title">Command over</h5>
                 <button type="button" class="close" data-dismiss="modal">&times;</button>
             </div>
             <div class="modal-body">
-                <p>Votre commande a bien été passée !</p>
+                <p>Your command was successful</p>
             </div>
             <div class="modal-footer">
                 <button type="button" class="btn btn-default" data-dismiss="modal">OK</button>

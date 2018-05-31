@@ -16,18 +16,23 @@ export class AppComponent {
             response => {
                 this.articles = JSON.parse(response['_body']);
                 console.log(this.articles);
+
             },
             error => {
                 console.log(error);
             }
         );
     }
-    addToCard(i) {
-        i = {
-            name : 'Nimbus 2000',
-            price: 2000
+    addToCard(item) {
+
+
+         item = {
+            name : 'Air Wave Gold' ,
+            price: '2000'
         };
-        console.log('ajout de ' + i.name);
-      this.cardService.updateCard(i);
+        console.log('ajout de ' + item.name);
+      this.cardService.updateCard(item);
     }
+
+
 }

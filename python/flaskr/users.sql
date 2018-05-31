@@ -1,0 +1,10 @@
+DROP TABLE IF EXISTS users;
+DROP TABLE IF EXISTS post;
+
+CREATE TABLE users (
+  id INTEGER PRIMARY KEY AUTOINCREMENT,
+  username TEXT UNIQUE NOT NULL,
+  password TEXT NOT NULL
+);
+
+INSERT INTO `users` VALUES (1,'Jessica','mdp');
